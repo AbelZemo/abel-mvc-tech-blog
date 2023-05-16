@@ -53,17 +53,32 @@ let sequelize;
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
-  sequelize = new Sequelize(
-    "dem1rb4i9frv2t",
-    "fpieikcplgttnx",
-    "2e5bc1733fdc7cb7c38d7e5c54b2c1399f0230f00e22589062474c0eacdf8a19",
-    {
-      host: "ec2-34-226-11-94.compute-1.amazonaws.com",
-      dialect:"postgres",
-      protocol:"postgres",
-      port: 5432,
-    }
-  );
+  // sequelize = new Sequelize(
+  //   "dem1rb4i9frv2t",
+  //   "fpieikcplgttnx",
+  //   "2e5bc1733fdc7cb7c38d7e5c54b2c1399f0230f00e22589062474c0eacdf8a19",
+  //   {
+  //     host: "ec2-34-226-11-94.compute-1.amazonaws.com",
+  //     dialect:"postgres",
+  //     protocol:"postgres",
+  //     port: 5432,
+  //   }
+  // );
+
+  sequelize = new Sequelize({
+    database: "dem1rb4i9frv2t",
+    username: "fpieikcplgttnx",
+    password: "2e5bc1733fdc7cb7c38d7e5c54b2c1399f0230f00e22589062474c0eacdf8a19",
+    host: "ec2-34-226-11-94.compute-1.amazonaws.com",
+    port: 5432,
+    dialect: "postgres",
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false 
+      }
+    },
+  });
 }
 
 module.exports = sequelize;
