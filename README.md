@@ -68,7 +68,7 @@ Built using MySQL2, Express, Sequelize, Handlebars and dotenv
 ![4](screenshots/4.png)
 ![5](screenshots/5.png)
 ![6](screenshots/6.png)
-
+![7](screenshots/7.png)
 
 
 ## Usage
@@ -82,6 +82,6 @@ step 6 : edit your post and your comment
 
 ## Deployed application link
 
-
+https://abel-mvc-tech-blog.herokuapp.com/
 
 
