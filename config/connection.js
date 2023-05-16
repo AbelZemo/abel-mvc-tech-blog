@@ -21,6 +21,7 @@
 // module.exports = sequelize;
 
 const Sequelize = require('sequelize');
+const pg= require("pg")
 require('dotenv').config();
 
 let sequelize;
@@ -31,7 +32,7 @@ if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(
     process.env.DATABASE_URL,
     {
-      dialect: 'postgres'
+      dialectModule: pg
     }
   );
 }
