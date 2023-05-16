@@ -44,7 +44,7 @@ Built using MySQL2, Express, Sequelize, Handlebars and dotenv
         Express
         Dotenv
 ## Installation
-        step 1 :git clone https://github.com/AbelZemo/mvc_tech_blog
+        step 1 :git clone https://github.com/AbelZemo/abel-mvc-tech-blog
         step 2 : Both Node.js and MySQL must be installed on your computer.
         step 3 : Install dependencies using the below commands
         ( 
@@ -52,7 +52,7 @@ Built using MySQL2, Express, Sequelize, Handlebars and dotenv
                 npm install express sequelize mysql2
         )
         step 4 : Open up MySQL shell and type this input (source db/schema.sql)
-        step 5 : type this input (use mvc_tech_blog)
+        step 5 : type this input (use abel-mvc-tech-blog)
         step 6 : Then quit MySQL shell and input the following command in your terminal (npm run seed)
         step 7 : to start running application simply type this command 
         (
