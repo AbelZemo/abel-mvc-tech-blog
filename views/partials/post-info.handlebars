@@ -1,0 +1,36 @@
+<div class="container">
+
+    <header class="title">
+
+        <div class="column">
+            <p class=" has-text-primary-light"></p>
+            <a href="/post/{{id}}" class="has-text-black is-capitalized is-pulled-left">{{title}} </a></p>
+        </div>
+
+        <div class="column">
+            <span class=""> </span>
+        </div>
+
+    </header>
+
+    <div class="card-content">
+        <div class="content has-text-justified">
+            {{post}}
+        </div>
+        <div class="posts">
+            <p>
+                <b>Posted by : {{user.username}}</b>
+            </p>
+
+            <p>
+                <b>created_at : {{format_date created_at}}</b>
+            </p>
+
+            <p>
+                <a href="/post/{{id}}">
+                    {{comments.length}} {{format_plural "comment"comments.length}}</a>
+            </p>
+
+        </div>
+
+    </div>

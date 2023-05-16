@@ -1,0 +1,19 @@
+<div class="comments">
+  {{#each this}}
+  <section class="comment">
+    <div class="meta">
+      Commented By: {{user.username}} on {{format_date created_at}}
+    </div>
+    <div class="text">
+
+      {{comment}}
+
+      {{#ifEquals user.id  user_id }}
+      <a href="/dashboard/editcomment/{{id}}"> Edit comment</a>
+      {{/ifEquals}}
+
+    </div>
+
+  </section>
+  {{/each}}
+</div>

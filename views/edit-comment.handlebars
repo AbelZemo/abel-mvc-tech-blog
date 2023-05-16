@@ -1,0 +1,14 @@
+<article>
+  <a href="/post/{{comments.post_id}}" class="is-pulled-right"> &larr; back to comments</a>
+  <h2 class="title mt-5">edit comment </h2>
+  <hr>
+  <form class="edit-comment-form">
+    <label for="comment">comment content:</label>
+    <input class="textarea" name="comment" type="text" value="{{comments.comment}}" />
+    <button type="submit" class="button is-success" id="btn">save comment</button>
+    <button type="button" class="button is-danger delete-comment-btn" id="btn">delete comment</button>
+  </form>
+</article>
+
+<script src="/js/edit-comment.js"></script>
+<script src="/js/delete-comment.js"></script>
